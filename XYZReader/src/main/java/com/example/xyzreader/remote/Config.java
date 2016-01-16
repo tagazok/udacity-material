@@ -9,7 +9,8 @@ public class Config {
     static {
         URL url = null;
         try {
-            url = new URL("https://dl.dropboxusercontent.com/u/231329/xyzreader_data/data.json" );
+            // Thanks https://discussions.udacity.com/t/volley-not-loading-images-from-https-on-device/37286
+            url = new URL("http://dl.dropboxusercontent.com/u/231329/xyzreader_data/data.json" );
         } catch (MalformedURLException ignored) {
             // TODO: throw a real error
         }
